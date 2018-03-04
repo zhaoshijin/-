@@ -1,0 +1,93 @@
+<view class="container">
+
+    <view class="CAP">
+        <view>
+            <image src='brandimg/gaf.png'></image>
+        </view>
+        <view class="details">
+            <text class="specil">激活立享会员特权</text>
+            <text bindtap="binddetails" class="membercard">会员卡详情</text>
+
+
+
+
+            <form bindsubmit="formSubmit" >  
+              <view class="login-from">  
+
+                <!--必填信息  -->
+                <view class="inputView">  
+                  <label class="loginLab required">必填信息</label>  
+                </view>  
+                <view class="line"></view>  
+
+                <!--账号-->  
+                <view class="inputView">  
+                  <label class="loginLab">姓名</label>  
+                  <input class="inputText" placeholder="请输入姓名" bindinput="phoneInput" />  
+                </view>  
+                <view class="line"></view>  
+              
+                <!--密码-->  
+                <view class="inputView phonenumber">    
+                  <label class="loginLab">手机</label>  
+                  <input class="inputText "  maxlength="11"  placeholder="请输入手机号" bindinput="passwordInput" />  
+                </view>  
+              
+                
+              </view> 
+           
+
+                <!--同意条款  -->
+                <view class='form-group'>  
+                    <checkbox-group name="hobby" bindchange="listenCheckboxChange">  
+                        <label>
+                            <checkbox value=""/>我已阅读并同意<i class="declaration">会员卡信息使用声明</i>
+                        </label>  
+                    </checkbox-group>  
+                 </view>  
+
+             
+
+                 <!--按钮-->  
+                <view class="loginBtnView">  
+                  <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">提交</button>  
+                </view> 
+              </form> 
+
+        </view>
+    </view>
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

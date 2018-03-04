@@ -1,0 +1,55 @@
+<view class="container">
+  <view class="detailstop">
+      <text class="carddetails">会员卡详情/会员协议</text>
+      <view class="line"></view> 
+  </view>
+  <view class="detailsbottom">
+      <text class="left">特权说明</text>
+      <view class="right same">
+            <text>每消费1.00元,赠送2积分</text>
+            <text>每使用2积分,抵扣1.00元</text>
+            <text>用卡可享受9.5折优惠</text>
+            <text>每消费1.00元,赠送10积分</text>
+            <text>每使用1000积分,抵扣1元</text>
+      </view>
+  </view>
+  <view class="detailsbottom">
+      <text class="left">有效日期</text>
+      <view class="right">
+            <text>永久有效</text>
+      </view>
+  </view>
+  <view class="detailsbottom">
+      <view class="left">可用时段</view>
+      <view class="right">
+            <text>周一至周日 全天</text>
+      </view>
+  </view>
+
+
+  <view class="detailsbottom">
+      <view class="left ">电　话</view>
+      <view class="right phone">
+            <text>15560027145</text>
+      </view>
+  </view>
+
+  <view class="detailsbottom">
+      <view class="left">商户服务</view>
+      <view class="right serve ">
+            <text>免费WIFI</text>
+            <text>可带宠物</text>
+            <text>免费停车</text>
+            <text>可外卖</text>
+      </view>
+  </view>
+
+
+  <view class="detailsbottom">
+      <view class="left">使用须知</view>
+      <view class="right">
+            <text>每人限领一张</text>
+      </view> 
+  </view>
+
+</view>

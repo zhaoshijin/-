@@ -1,0 +1,41 @@
+
+<view class="container">
+    <view class="prepaidtop">
+        <view class="money">
+            <text>累计消费(元)</text>
+            <text class="yuan">￥ 0</text>
+        </view>
+        <view class="allmoney">
+             <text>累计储值 : 5000元</text>
+             <view>
+                  <text class="backmoney">待返还金额 : 5000元</text>
+             </view>
+        </view>
+    </view>
+
+    <view class="prepaidmiddle">
+        <view >
+        <image src='prepaidImg/money.png' class="moneyimg" ></image>
+        在线充值
+        </view>
+    </view>
+
+    <view class="prepaidbottom">
+        <view class="recharge">
+            <view class="left">
+                <text class="refill">会员充值</text>
+                <text class="time">2017/8/23 18:00:00</text>
+            </view>
+            <view class="right">
+                <text class="howmuch">+10.00(实付金额:10.00)</text>
+                <text class="business">卫浴商家</text>
+            </view>     
+        </view>
+        <view class="line"></view> 
+
+
+
+
+
+    </view>
+</view>

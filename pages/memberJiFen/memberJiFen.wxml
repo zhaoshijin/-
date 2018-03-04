@@ -1,0 +1,29 @@
+<view class="container">
+    <view class='jifen_con'>
+        <view class='jifen_top'>
+            <view>您当前的积分余额为：{{jifen}}</view>
+        </view>
+        <view class='jifen_bottom'>
+            <view class='jifen_detail'>积分明细</view>
+            <view class='table'>
+                <view class='tr'>
+                    <view class='th'>日期</view>
+                    <view class='th'>来源</view>
+                    <view class='th'>积分明细</view>
+                </view>
+                <block wx:for="{{listData}}" wx:key="{{code}}">
+                  <view class='tr bg_g' wx:if="{{index % 2 == 0}}">
+                    <view class='td'>{{item.code}}</view>
+                    <view class='td'>{{item.text}}</view>
+                    <view class='td'>{{item.type}}</view>
+                  </view>
+                  <view class='tr' wx:else>
+                    <view class='td'>{{item.code}}</view>
+                    <view class='td'>{{item.text}}</view>
+                    <view class='td'>{{item.type}}</view>
+                  </view>
+                </block>
+            </view> 
+        </view>
+    </view>
+</view>

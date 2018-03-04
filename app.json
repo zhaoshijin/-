@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/classify/index",
+    "pages/onlineshop/index",
+    "pages/brand/index",
+    "pages/list/index",
+    "pages/memberdetails/index",
+    "pages/membercenter/index" ,
+    "pages/prepaid/index",
+    "pages/goods-details/index",
+    "pages/shop-cart/index",
+    "pages/selectplace/index",  
+    "pages/findClothes/findClothse",
+    "pages/scanCode/scanCode",
+    "pages/memberData/memberData",
+    "pages/memberHis/memberHis",
+    "pages/memberJiFen/memberJiFen",
+    "pages/memberWelfare/memberWelfare",
+    "pages/myCoupons/myCoupons",
+    "pages/orderDetail/orderDetail",
+    "pages/orderQuery/orderQuery",
+    "pages/quanDetail/quanDetail",
+    "pages/sharing/sharing"
+  ],
+  "window":{
+    "backgroundTextStyle":"white",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "在线商城",
+    "navigationBarBackgroundColor": "#000b43",
+    "backgroundColor": "#F2f2f2",
+    "enablePullDownRefresh": true
+  },
+  
+  "debug": true
+}
+
+

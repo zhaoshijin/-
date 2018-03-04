@@ -1,0 +1,121 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="unregistered">
+    <view>
+      <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+        <block wx:for="{{images}}">
+          <swiper-item>
+            <image src="{{item.picurl}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <view class="regbg">
+      <button bindtap="bindNewmember" class="regbtn" size="mini">
+        申请新会员
+      </button>
+    </view>
+  </view>
+</view>
+
+
+<!--会员卡 条形码 卡号  -->
+<view class="registered">
+  <view class="swiper_box">
+    <image src="indeximg/membercard.png" class="slide-image" />
+    <image src="indeximg/barcode.png" class="barcode" />
+    <view class="cardnumber">977131000900</view>
+  </view>
+
+  <view class="regbg">
+    <view bindtap="bindgrade">等级 : 金卡会员</view>|
+    <view bindtap="bindspending">积分 : 20</view>|
+    <view bindtap="bindprepaid">储值 : 5000</view>
+  </view>
+</view>
+
+
+
+
+<!-- 各模块链接  -->
+<view class="wrapbottom">
+  <view class="mainbottom">
+    <view bindtap="bindViewTap" class="seekclothes">
+      <image src="indexImg/seekclothes.png"></image>
+      <text>扫码寻衣</text>
+      <text class="graytext">扫码查库存</text>
+    </view>
+    <view bindtap="bindbrand" class="onlineshop">
+      <image src="indexImg/onlineshop.png"></image>
+      <text>在线商城</text>
+      <text class="graytext">在线购买商品</text>
+    </view>
+    <view bindtap="bindcart" class="shoppingbag">
+      <image src="indexImg/shoppingbag.png"></image>
+      <text> 购物袋</text>
+      <text class="graytext">好东西收起来</text>
+    </view>
+  </view>
+  <view class="mainbottom">
+    <view bindtap="bindorder">
+      <image src="indexImg/indent.png"></image>
+      <text>订单查询</text>
+      <text class="graytext">查找您的订单</text>
+    </view>
+    <view bindtap="bindcoupon" class="onlineshop">
+      <image src="indexImg/coupons.png"></image>
+      <text>优惠券</text>
+      <text class="graytext">查看优惠券</text>
+    </view>
+    <view bindtap="bindspending" class="shoppingbag">
+      <image src="indexImg/spending.png"></image>
+      <text> 会员福利</text>
+      <text class="graytext">查看消费情况</text>
+    </view>
+  </view>
+  <view class="mainbottom">
+    <view bindtap="bindplace" class="seekclothes">
+      <image src="indexImg/outlet.png"></image>
+      <text>查找门店</text>
+      <text class="graytext">查找附近门店</text>
+    </view>
+    <view bindtap="binddata" class="onlineshop">
+      <image src="indexImg/member.png"></image>
+      <text>会员资料</text>
+      <text class="graytext">修改资料赚积分</text>
+    </view>
+    <view bindtap="bindcustomerservice" class="shoppingbag">
+      <image src="indexImg/customerService.png"></image>
+      <text> 联系客服</text>
+      <text class="graytext">有疑问找客服</text>
+    </view>
+  </view>
+
+
+
+  <!--弹窗  -->
+
+  <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+
+    <!--drawer content-->
+    <view class="drawer_title">联系客服</view>
+    <view class="drawer_content">
+      <view class="top grid">
+        <label class="title col-0">订购热线 :</label>
+        <text class="input_base input_h30 col-1" name="rName" value="">4089849774897</text>
+        <image src="indeximg/phone.jpg" class="phoneimg" name="rName" value="" bindtap="bindcalling" data-calling='283907489797'></image>
+      </view>
+      <view class="top grid">
+        <label class="title col-0">售后热线 :</label>
+        <text class="input_base input_h30 col-1" name="mobile" value="">4089849774897</text>
+        <image src="indeximg/phone.jpg" class="phoneimg" name="rName" value="" bindtap="bindcalling" data-calling='283907489797'></image>
+      </view>
+
+    </view>
+    <view class="btn_ok" bindtap="powerDrawer" data-statu="close">关闭</view>
+  </view>
+
+
+
+</view>

@@ -1,0 +1,103 @@
+<view class="container">
+    <view class="detailTop">
+       <image class="detailImg" src="quanDetailImg/5.png"></image>
+      <view class="list1">
+         <view class="list1_left">
+           <text class="list1_title">情人节大酬宾</text>
+           <text class="list1_quan">券号：</text>
+           <text class="list1_num">{{code}}</text>
+         </view>
+         <view class="list1_right">
+           <image class="erImg" src="quanDetailImg/1.png" bindtap="codeShow"></image>
+         </view>
+      </view>
+
+      <view class="list_stores">
+          <text class="list_con">适用门店</text>
+      </view>
+
+      <view class="list_allStores">
+         <view class="list1_left">
+           <text class="list1_title">总店</text>
+           <text class="list1_address">四川成都武侯区保利南塔903室</text>
+           <image class="addressImg" src="quanDetailImg/2.png"></image>
+           <text class="list1_length">999.93km</text>
+         </view>
+         <view class="all_right">
+           <image class="erImg" src="quanDetailImg/3.png"></image>
+         </view>
+      </view>
+
+      <view class="list_stores">
+          <text class="list_see">查看适用的全部33家门店</text>
+          <image class="list_apply" src="quanDetailImg/4.png"></image>
+      </view> 
+    </view>   
+
+    <view class="detailCenter">
+      <view class="list_stores">
+         <text class="list_con">使用须知</text>
+      </view>
+      <view class="userKnow">
+        <view class="list2_type">
+          <text class="voucherType">券类型</text>
+         <text class="typeVoucher">100.00元代金券</text>
+        </view>
+        <view class="list2_type">
+          <text class="voucherType">有效期</text>
+         <text class="typeVoucher">永久有效</text>
+        </view>
+      </view> 
+    </view>
+    <view class="detailBottom">
+      <view class="list_stores">
+          <text class="list_con">图文详情</text>
+      </view>
+      <view class="bottomImg">
+        <image src="quanDetailImg/6.png"></image>
+        <image class="bottomImg1" src="quanDetailImg/7.png"></image>
+        <image class="bottomImg2" src="quanDetailImg/8.png"></image>
+      </view>
+    </view>
+
+    <view class="detailFooter">
+
+      <view class="list_stores">
+          <text class="list_con">分享奖励</text>
+      </view>
+
+       <view class="list_stores">
+          <text class="list_see">奖励收个券分享者10.00积分2.00储值</text>
+      </view> 
+
+      <view class="detailSharing">
+        <view class="footerLeft" bindtap="toFriend">
+            <image src="quanDetailImg/9.png"></image>
+            <text>分享给朋友</text>
+        </view>
+
+        <view class="footerRight" bindtap="lookDetail">
+            <text>查看分享详情</text>
+        </view>
+      </view>
+    </view>
+</view>
+<!-- 二维码覆盖层 -->
+<view class="cover_hide{{showView?'cover_show':''}}  coverDetail">
+    <view class="codeContent" catchtap="coverHide">
+          <view class="barcode">
+             <canvas canvas-id="barcode"/>
+             <view class="barnum">{{code}}</view>
+          </view>
+          <view class="qrcode">
+              <canvas canvas-id="qrcode"/>
+           </view>
+    </view>
+</view>
+<!-- 分享给朋友 -->
+<view class="cover_hide{{showFriend?'cover_show':''}}  coverDetail">
+    <view class="coverImg">
+        <image class="coverimg1" src="quanDetailImg/10.png"></image>
+        <image class="coverimg2" src="quanDetailImg/11.png" catchtap="knowClick"></image>
+    </view>
+</view>

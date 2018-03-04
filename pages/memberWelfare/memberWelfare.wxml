@@ -1,0 +1,13 @@
+<view class="container">
+    <view class="welfare">
+        <view class="welfare_top">
+            <image src='memberWelfareImg/1.png'></image>
+            <view>{{username}}</view>
+            <view>当前积分余额：{{jifen}}</view>
+        </view>
+        <view class="welfare_btn">
+            <view class="btn_v1" bindtap='toHistory'>兑换历史</view>
+            <view class="btn_v2" bindtap='toJiFen'>积分明细</view> 
+        </view>
+    </view>  
+</view>

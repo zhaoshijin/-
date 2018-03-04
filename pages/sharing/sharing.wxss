@@ -1,0 +1,185 @@
+page {
+  width: 100%;
+  height: 100%;
+}
+.polite {
+  width: 100%;
+  height: 100%;
+  background: #e35d4c;
+  text-align: center;
+}
+.politeTop {
+  width: 100%;
+}
+.pointTopImg {
+  width: 100%;
+  height: 400rpx;
+  vertical-align: middle;
+}
+.pointCenter {
+  position: relative;
+  left: 50%;
+  margin-left: -55rpx;
+  top: 0;
+  margin-top: -55rpx;
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  background: white;
+}
+.pointCenterImg {
+  position: absolute;
+  top: 25rpx;
+  left: 20rpx;
+  width: 70rpx;
+  height: 60rpx;
+}
+.centerText1 {
+  color: white;
+  font-size: 35rpx;
+  margin-top: 10rpx;
+  
+}
+.centerText3 {
+  color: white;
+  font-size: 24rpx;
+} 
+.pointBottom {
+  width: 100%;
+  height: 500rpx;
+  border-bottom: 1px solid #e88174;
+}
+.bottomQuan {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20rpx;
+  height: 200rpx;
+  background: white;
+  border-radius: 10rpx;
+}
+.quanLeft {
+  width: 25rpx;
+  height: 40rpx;
+  margin-top: 80rpx;
+  float: left;
+}
+.quanRight {
+  width: 25rpx;
+  height: 40rpx;
+  margin-top: 80rpx;
+  float: right; 
+}
+.quanText1 {
+  width: 90%;
+  margin-left: 5%;
+  height: 130rpx;
+  border-bottom: 1px solid #e8e8e8;
+}
+.text_q1 {
+  float: left;
+  line-height: 70rpx;
+  font-size: 35rpx;
+}
+.text_q2 {
+  font-size: 30rpx;
+  color: #e35d4c;
+  line-height: 100rpx;
+  margin-left: 50%;
+}
+.text_q3 {
+  font-size: 50rpx;
+  color: #e35d4c;
+  line-height: 100rpx;
+}
+.quanText2 {
+  width: 90%;
+  height: 68rpx;
+  line-height: 68rpx;
+  margin-left: 5%;
+}
+.text_q4 {
+  font-size: 30rpx;
+  color: #9a9a9a;
+  float: left;
+}
+.quanBom {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+  margin-left: 60%;
+}
+.text_q5 {
+  font-size: 30rpx;
+  color: #ff8a00;
+}
+.quanBtn {
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  color: #9e6501;
+  background: #ffd285;
+  margin-top: 50rpx;
+}
+.footQuanT {
+  width: 92%;
+  margin-left: 4%;
+  height: 90rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footText1 {
+  width: 30%;
+  border-bottom: 1rpx solid #ffffff;
+  display: inline-block; 
+}
+.footText2 {
+  color: #ffffff;
+  font-size: 30rpx;
+  margin: 0 54rpx;
+  line-height: 90rpx;
+}
+.footText3 {
+  width: 30%;
+  border-bottom: 1rpx solid #ffffff;
+  display: inline-block;
+}
+.quanFootText {
+  font-size: 25rpx;
+  color: #666666;
+}
+/* 分享效果 */
+.coverDetail {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+ .cover_show {
+  display: block;
+}
+.cover_hide {
+  display: none;
+} 
+.coverImg {
+  width: 80%;
+  margin-left: 10%;
+   height: 600rpx; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.coverimg1 {
+  width: 80%;
+  height:460rpx;
+}
+.coverimg2 {
+  width: 30%;
+  height: 60rpx;
+}

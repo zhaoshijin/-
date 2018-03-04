@@ -1,0 +1,67 @@
+.container {
+    background-color: #F2f2f2;
+    font-size: 14px;
+}
+.prepaidtop{
+   width:100%;
+   height:100px;
+   background: #108de9;
+   color:white;
+   line-height: 30px;
+}
+.yuan{
+  font-weight: bold;
+  font-size: 16px;
+}
+.money text{
+   display:block;
+   text-align: center;
+}
+.allmoney{
+  display:flex;
+}
+.allmoney text{
+   flex:1; 
+   margin:0 20px ;
+}
+.backmoney{
+  border:1px solid white;
+  border-radius: 5px;
+}
+.moneyimg{
+  width:25px;
+  height:25px;
+  margin:5px 0 0 0 ;
+}
+.prepaidmiddle{
+  font-size: 18px;
+  background: white;
+  text-align: center;
+  padding:2px 0;
+  margin:10px 0 10px 0 ;
+}
+.line {  
+  width: 100%;  
+  height: 1px;  
+  background-color: #cccccc;  
+  margin: 1px 0 10px 0;  
+} 
+.prepaidbottom{
+  background: white;
+}
+.recharge{
+  display:flex;
+}
+.recharge view{
+  flex:1;
+}
+.recharge view text{
+  display: block;
+}
+.refill{
+  font-weight: bold;
+  font-size: 16px;
+}
+.time,.business{
+  color:#aaaaaa;
+}

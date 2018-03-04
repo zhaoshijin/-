@@ -1,0 +1,35 @@
+.welfare {
+  width: 100%;
+}
+.welfare_top {
+  width: 90%;
+  padding: 40rpx;
+}
+.welfare_top image {
+  width: 100rpx;
+  height: 100rpx;
+  float: left;
+  padding-right: 20rpx;
+}
+.welfare_top view {
+  font-size: 35rpx;
+  color: #0c0936;
+}
+.welfare_btn {
+  width: 100%;
+  height: 80rpx;
+}
+.welfare_btn view {
+  width: 49.9%;
+  line-height: 80rpx;
+  text-align: center;
+  color: white;
+  font-size: 30rpx;
+  background: #0c0938;
+}
+.btn_v1 {
+  float: left;
+}
+.btn_v2 {
+  float: right;
+}

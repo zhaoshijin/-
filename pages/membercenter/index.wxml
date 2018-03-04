@@ -1,0 +1,75 @@
+
+<!--会员卡 条形码 卡号  -->
+<view class="registered">
+  <view class="swiper_box">
+    <image src="indeximg/membercard.png" class="slide-image" />
+    <image src="indeximg/barcode.png" class="barcode" />
+    <view class="cardnumber">977131000900</view>
+  </view>
+
+  <view class="regbg">
+    <view bindtap="bindgrade">等级 : 金卡会员</view>|
+    <view bindtap="bindspending">积分 : 20</view>|
+    <view bindtap="bindprepaid">储值 : 5000</view>
+  </view>
+</view>
+
+
+
+<!-- 各模块链接  -->
+<view class="wrapbottom">
+  <view class="mainbottom">
+    <view bindtap="bindViewTap" class="seekclothes">
+      <image src="../index/indeximg/seekclothes.png"></image>
+      <text>扫码寻衣</text>
+      <text class="graytext">扫码查库存</text>
+    </view>
+    <view bindtap="bindbrand" class="onlineshop">
+      <image src="../index/indeximg/onlineshop.png"></image>
+      <text>在线商城</text>
+      <text class="graytext">在线购买商品</text>
+    </view>
+    <view bindtap="bindcart" class="shoppingbag">
+      <image src="../index/indeximg/shoppingbag.png"></image>
+      <text> 购物袋</text>
+      <text class="graytext">好东西收起来</text>
+    </view>
+  </view>
+  <view class="mainbottom">
+    <view bindtap="bindorder">
+      <image src="../index/indeximg/indent.png"></image>
+      <text>订单查询</text>
+      <text class="graytext">查找您的订单</text>
+    </view>
+    <view bindtap="bindcoupon" class="onlineshop">
+      <image src="../index/indeximg/coupons.png"></image>
+      <text>优惠券</text>
+      <text class="graytext">查看优惠券</text>
+    </view>
+    <view bindtap="bindspending" class="shoppingbag">
+      <image src="../index/indeximg/spending.png"></image>
+      <text> 会员福利</text>
+      <text class="graytext">查看消费情况</text>
+    </view>
+  </view>
+  <view class="mainbottom">
+    <view bindtap="bindplace" class="seekclothes">
+      <image src="../index/indeximg/outlet.png"></image>
+      <text>查找门店</text>
+      <text class="graytext">查找附近门店</text>
+    </view>
+    <view bindtap="binddata" class="onlineshop">
+      <image src="../index/indeximg/member.png"></image>
+      <text>会员资料</text>
+      <text class="graytext">修改资料赚积分</text>
+    </view>
+    <view bindtap="bindcustomerservice" class="shoppingbag">
+      <image src="../index/indeximg/customerService.png"></image>
+      <text> 联系客服</text>
+      <text class="graytext">有疑问找客服</text>
+    </view>
+  </view>
+</view>
+  
+
+

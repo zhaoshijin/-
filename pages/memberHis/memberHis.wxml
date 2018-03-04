@@ -1,0 +1,30 @@
+<view class="container">
+    <view class="welfare">
+        <view class="welfare_top">
+            <image src='memberHisImg/1.png'></image>
+            <view>{{username}}</view>
+            <view>当前积分余额：{{jifen}}</view>
+        </view>
+        <view class="welfare_btn">兑换历史</view>
+        <view class='table'>
+            <view class='tr welfare_title'>
+                <view class='th'>日期</view>
+                <view class='th'>兑换礼品</view>
+                <view class='th'>花费积分</view>
+                <view class='th'>积分余额</view>  
+            </view>
+            <view class='tr'>
+                <view class='td'>2017-12-1</view>
+                <view class='td'>优酷会员</view>
+                <view class='td'>1500</view>
+                <view class='td'>1700</view>
+            </view>
+            <view class='tr'>
+                <view class='td'>2017-12-1</view>
+                <view class='td'>爱奇艺会员</view>
+                <view class='td'>1500</view>
+                <view class='td'>200</view>
+            </view>
+        </view>
+    </view>  
+</view>

@@ -1,0 +1,90 @@
+<view class="container">
+  <view class="changeData">
+    <view class="look_manual"></view>
+      <view class="user_individual">
+        <view class="individual_text">以下个人信息将帮助我们为您定制会员福利，请您尽量准确提供哦。</view>
+        <view class="individual_detail">
+           <image class="individual_imgL" src='memberDataImg/1.png'></image>
+           <input type="text" value='{{userPhone}}' disabled='disabled'></input>
+        </view>
+        <view class="individual_detail">
+            <image class="individual_imgL"  src='memberDataImg/2.png'></image>
+            <input type="text" value="{{userName}}"></input>
+        </view>
+        <view class="individual_detail">
+            <image class="individual_imgL"  src='memberDataImg/3.png'></image>
+            <picker mode="date" bindchange="bindPickerChange" value="{{data}}" start="1900-1-1" end="{{time}}">
+                <text>{{data}}</text>
+            </picker>
+            <image class="individual_imgR" src='memberDataImg/9.png'></image>
+        </view>
+        <view class="individual_text">(选填，送20积分，更享生日礼)</view>
+        <view class="individual_text">*生日信息一经提交不能修改哦~</view>
+        <view class="individual_detail">
+            <image class="individual_imgL"  src='memberDataImg/4.png'></image>
+            <picker mode="selector" bindchange="bindSelectorChange" value="{{index}}" range="{{array}}">
+                <text>{{array[index]}}</text>
+            </picker>
+            <image class="individual_imgR" src='memberDataImg/9.png'></image>
+        </view>
+         <view class="individual_detail">
+           <image class="individual_imgL1" src='memberDataImg/5.png'></image>
+           <input type="text" placeholder="请输入您的邮箱"></input>
+        </view>
+        <view class="individual_detail">
+            <image class="individual_imgL"  src='memberDataImg/6.png'></image>
+            <input type="text" placeholder="请输入您的地址"></input>
+        </view>
+        <view class="individual_text">您有孩子吗？提供更多相关信息，享受更多优惠</view>
+        <view class="individual_text">请填写宝宝的性别（选填，送20积分）</view>
+        <view class="individual_detail">
+            <image class="individual_imgL"  src='memberDataImg/4.png'></image>
+            <picker mode="selector" bindchange="bindSelectorChange" value="{{index}}" range="{{array}}">
+                <text>{{array[index]}}</text>
+            </picker>
+            <image class="individual_imgR" src='memberDataImg/9.png'></image>
+        </view>
+        <view class="individual_text">请填写宝宝的出生年月（选填，送20积分）</view>
+        <view class="individual_detail">
+            <image class="individual_imgL"  src='memberDataImg/3.png'></image>
+            <picker mode="date" bindchange="bindPickerChange" value="{{data}}" start="1900-1-1" end="{{time}}">
+                <text>{{data}}</text>
+            </picker>
+            <image class="individual_imgR" src='memberDataImg/9.png'></image>
+        </view>
+        <view class="individual_text">请选择您的偏好语言（选填，送20积分）</view>
+         <view class="individual_detail">
+            <image class="individual_imgL"  src='memberDataImg/8.png'></image>
+            <picker mode="selector" bindchange="bindSelector1Change" value="{{index1}}" range="{{array1}}">
+                <text>{{array1[index1]}}</text>
+            </picker>
+            <image class="individual_imgR" src='memberDataImg/9.png'></image>
+        </view>
+        <view class="individual_text">请选择您的偏好门店（选填，送20积分）</view>  
+      </view>
+      <view class="individual_footer">
+            <view class="individual_bottom">
+                <picker mode="selector" bindchange="changeProvince">
+                <text>请选择省份</text>
+            </picker>
+            </view>
+            <view class="individual_bottom"  bindchange="changeCity">
+                <picker mode="selector" >
+                <text>请选择城市</text>
+            </picker>
+            </view>
+            <view class="individual_bottom">
+                <picker mode="selector">
+                <text>请选择门店</text>
+            </picker>
+            </view>
+      </view>
+    <view class="member_rule">
+        <checkbox class='checked' checked='checked'></checkbox>
+        <view>我接受注册会员章程，并承诺我已经阅读并接受注册<text>会员章程</text>和<text>隐私政策</text>的详细内容。</view>            
+    </view>
+    <button class="memberSure_btn" bindtap="makeSure">确定</button>
+  </view>
+</view>
+
+

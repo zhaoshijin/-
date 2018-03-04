@@ -1,0 +1,62 @@
+<view class="container">
+  <!-- 头部 -->
+  <view class="myCouTop">
+    <view class="{{selected?'red':'default'}} userClick" bindtap="selected">未使用</view>
+    <view class="{{selected1?'red':'default'}} userClick" bindtap="selected1">已失效</view>
+  </view>
+  <!-- 中间内容 -->
+  <view class="{{selected?'show':'hidden'}} noUseClick">
+  <!-- 100 -->
+      <view class="noUseHundred" bindtap="voucherClick">
+          <view class="hundredImg">
+              <text class="imgText">代金券</text>
+              <view>
+                  <text class="imgPrice">￥</text>
+                  <text class="price">{{quanPrice}}</text>
+              </view>
+          </view>
+          <view class="hundredLeft">
+              <text class="useTitle">{{quanTitle}}</text>
+              <text class="useCon">部分商品可用</text>
+              <text class="useCon">永久有效</text>
+          </view>
+          <view class="hundredRight">x1</view>
+      </view>
+
+      <view class="noUseHundred">
+          <view class="hundredImg">
+              <text class="imgText">代金券</text>
+              <view>
+                  <text class="imgPrice">￥</text>
+                  <text class="price">10</text>
+              </view>
+          </view>
+           <view class="hundredLeft">
+              <text class="useTitle">10元代金券</text>
+              <text class="useCon">部分商品可用</text>
+              <text class="useCon">永久有效</text>
+          </view>
+          <view class="hundredRight">x1</view>
+      </view>
+      
+  </view>
+  <view class="{{selected1?'show':'hidden'}} notUseClick">
+    <view class="noUseHundred">
+          <view class="hundredImg">
+              <text class="imgText">代金券</text>
+              <view>
+                  <text class="imgPrice">￥</text>
+                  <text class="price">100</text>
+              </view>
+          </view>
+          <view class="hundredLeft">
+              <text class="useTitle">情人节大酬宾</text>
+              <text class="useCon">部分商品可用</text>
+              <text class="useCon">已失效</text>
+          </view>
+          <view class="hundredRight">x1</view>
+      </view>
+  
+  </view>
+
+</view>

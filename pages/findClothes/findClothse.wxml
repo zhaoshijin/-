@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="scanTop">
+    <button class="userScan" bindtap="scanInfo">开始扫码</button>
+  </view>
+  <view class="scanBottom">
+    <view class="scanStep">
+         <image class="scanImg" src='findClothesImg/1.png'></image>
+         <view class="scanTitle">1</view>
+         <text class="scanText">点击主页【扫码寻衣】</text>
+    </view>
+    <view class="scanStep">
+         <image class="scanImg" src='findClothesImg/2.png'></image>
+         <view class="scanTitle">2</view>
+         <text class="scanText">扫描吊盘底部条码</text>
+    </view>
+    <view class="scanStep">
+         <image class="scanImg" src='findClothesImg/3.png'></image>
+         <view class="scanTitle">3</view>
+         <text class="scanText" decode="{{true}}" space="{{true}}">选择你需要的尺寸和颜色，点击【立即购买】</text>
+    </view>
+    <view class="scanStep">
+         <image class="scanImg" src='findClothesImg/4.png'></image>
+         <view class="scanTitle">4</view>
+         <text class="scanText" decode="{{true}}" space="{{true}}">结算中心最终确认商品，点击【确认订单】即可</text>
+    </view>
+     
+  </view>
+</view>

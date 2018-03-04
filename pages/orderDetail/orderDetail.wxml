@@ -1,0 +1,60 @@
+<view class="container">
+<view class='orderDetail_contain'>
+    <view class="orderDetail_top">
+        <text>订单编号:</text>
+        <text>{{orderCard}}</text>
+        <text class="top_pay">等待支付</text>
+    </view>
+    <view class="orderDetail_con">
+        <view class="con_1">
+            <image></image>
+        </view>
+        <view class="con_2">
+            <text class="text_1">123456879</text>
+            <view class="text_2">￥179.00</view>
+            <view class="con_3">
+               <text class="text_3">款号：155/78A(XXXS)</text>
+               <text class="text_4">x1</text>
+            </view>    
+        </view>  
+    </view>
+  </view>  
+    <view class="orderDetail_cont">
+            <text>共1件商品</text>
+            <text class="cont_2">小计：￥179.00</text> 
+    </view>
+    <view class="orderDetail_address">
+        <text class="orderDetail_name">啦啦</text>
+        <text>12345678910</text>
+        <view>河南郑州市中原区冬青街</view>
+    </view>
+    <view class="orderDetail_send">
+        <text>配送方式</text>
+        <text class="send_merchant">商家配送</text>
+    </view> 
+    <view class="orderDetail_bom">
+        <view class="priceDetail">
+            <view>
+                <text>商品总额</text>
+                <text class="priceDetail_right">￥179.00</text>
+            </view>
+            <view>
+                <text decode='true'>优&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;惠</text>
+                <text class="priceDetail_right">-￥0.00</text>
+            </view>
+            <view>
+                <text decode='true'>运&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费</text>
+                <text class="priceDetail_right">+￥12.00</text>
+            </view>
+        </view>
+        <view class="priceAll">
+            <text class="priceAll_pay">实付款</text>
+            <text class="priceAll_money">￥191.00</text>
+        </view>
+  
+    </view>
+    <view class="orderDetail_foot">
+        <button class="detailBtn1">继续支付</button>
+        <button class="detailBtn2" bindtap="continueOrder">继续订单</button>
+    </view>
+</view> 

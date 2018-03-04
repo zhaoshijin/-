@@ -1,0 +1,53 @@
+<view class="container">
+    <view class="banner">
+         <image src="../index/indeximg/banner.png" class="slide-image"/>
+    </view>
+
+    <view class="regbg">
+           <view bindtap="bindcart" class="shoppingbag">
+              <image src="../index/indexImg/shoppingbag.png"></image>
+              <text> 购物袋</text>
+            </view>
+          <view class="seekclothes">
+            <image src="../index/indexImg/indent.png"></image>
+            <text>订单查询</text>
+          </view>
+          <view bindtap="bindViewTap" class="seekclothes">
+              <image src="../index/indexImg/seekclothes.png"></image>
+              <text>扫码寻衣</text>
+            </view>
+         <view bindtap="bindmembercenter" class="shoppingbag">
+            <image src="../index/indexImg/customerService.png"></image>
+            <text> 会员中心</text>
+          </view>
+    </view>
+
+
+  <!-- 各模块链接  -->
+
+            <view class="goodslist">  
+                <!--item-->  
+                <block wx:for="{{goodslist}}">  
+                  <view class="goods" bindtap="tapgood" data-cate="{{item.id}}" data-index="{{index}}"   >  
+                    <!--左侧图片盒子-->  
+                    <view class="good-img">  
+                      <image src="{{item.imgUrl}}"  />  
+                    </view>  
+                    <!--右侧说明部分-->  
+                    <view class="good-cont">  
+                      <!--上--文字说明-->  
+                      <view class="goods-navigator">  
+                        <text class="good-name">{{item.name}}</text>  
+                      </view>  
+                      <!--下部分-->  
+                      <view class="good-price">  
+                        <text>{{item.price}}</text>   
+                      </view>  
+                    </view>  
+                  </view>  
+                </block>  
+              </view>  
+
+
+
+</view>

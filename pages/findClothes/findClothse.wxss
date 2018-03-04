@@ -1,0 +1,43 @@
+.scanTop {
+  width: 100%;
+}
+.userScan {
+  width: 90%;
+  height: 100rpx;
+  color: white;
+  background: #000b43;
+  margin-top: 20rpx;
+}
+.scanBottom { 
+  width: 90%;
+  margin-left: 2.5%;
+}
+.scanStep {
+  width: 50%;
+  float: left;
+   margin-top: 56rpx;
+}
+.scanImg {
+  width: 61%;
+  height: 358rpx;
+   margin-left: 15%;
+   display: block; 
+}
+.scanTitle {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  background: #000b43;
+  text-align: center;
+  line-height: 50rpx;
+  color: white;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+  float: left;
+}
+.scanText {
+  font-size: 22rpx;
+  color: #000b43;
+   margin-left: 6rpx; 
+}
+

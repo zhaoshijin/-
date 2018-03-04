@@ -1,0 +1,259 @@
+page {
+  width: 100%;
+  /* height: 100%; */
+  background: #f2f5f8;
+}
+.detailTop {
+  width: 100%;
+  background: white;
+}
+.detailImg {
+  width: 100%;
+  height: 400rpx;
+}
+.list1 {
+  height: 157rpx;
+  width: 100%;
+  border-bottom: 1px solid #dddddd; 
+}
+.list1_left {
+  margin-left: 4%;
+  float: left;
+}
+.list1_title {
+  font-size: 32rpx;
+  font-weight: 300;
+  display: block;
+  line-height:70rpx; 
+}
+.list1_quan {
+  font-size:27rpx; 
+}
+.list1_num {
+  font-size: 40rpx;
+  color: #ff6400;
+}
+.list1_right {
+  height: 65rpx;
+  line-height: 157rpx;
+  margin-left: 350rpx;
+}
+.erImg {
+  width: 65rpx;
+  height: 65rpx;
+  border-left: 1px solid #dddddd;
+  padding-left: 50rpx;
+}
+.list_stores {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #dddddd;
+}
+.list_con {
+  margin-left: 4%;
+  font-size: 32rpx;
+  font-weight: 300;
+  display: block;
+  line-height:100rpx; 
+}
+.list_allStores {
+  width: 100%;
+  height: 190rpx;
+  border-bottom: 1px solid #dddddd;  
+}
+.list1_address {
+  font-size: 25rpx;
+  color: #666666;
+  display: block;
+  line-height: 50rpx;
+}
+.addressImg {
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 5rpx;
+   margin-bottom: -5rpx;
+} 
+.list1_length {
+  font-size: 25rpx;
+  color: #666666;
+}
+.all_right {
+  float: right;
+  margin-right: 30rpx;
+  line-height: 190rpx;
+}
+.list_see {
+  margin-left: 4%;
+  font-size:28rpx; 
+}
+.list_apply {
+  width: 24rpx;
+  height: 40rpx;
+  margin-left: 48%;
+}
+.detailCenter {
+  width: 100%;
+  background: white;
+  margin-top: 20rpx;
+  border-top: 1px solid #dddddd;
+}
+.userKnow {
+  margin-left: 4%;
+  height: 187rpx;
+}
+.list2_type {
+  width: 100%;
+  margin-top: 20rpx;
+}
+.voucherType {
+  font-size: 28rpx;
+  color: #666666;
+  display: block;
+}
+.typeVoucher {
+  font-size: 28rpx;
+   display: block;
+}
+.detailBottom {
+  width: 100%;
+  background: white;
+  margin-top: 20rpx;
+  border-top: 1px solid #dddddd;
+}
+.bottomImg {
+  margin-top: 30rpx;
+}
+.bottomImg image {
+  width: 92%;
+  margin-left: 4%;
+  float: left; 
+}
+.bottomImg1 {
+  height: 380rpx;
+}
+.bottomImg2 {
+   height: 330rpx;
+}
+.detailFooter {
+  width: 100%;
+  margin-top: 120rpx;
+  background: white;
+  border-top: 1px solid #dddddd; 
+}
+.detailSharing {
+  width: 100%;
+}
+.footerLeft {
+  width: 44%;
+  margin-left: 4%;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  background: #ff6400;
+  color: white;
+  float: left;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.footerLeft image {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+.footerLeft text {
+  font-size: 35rpx;
+}
+.footerRight {
+  width: 44%;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  border: 1px solid #e8e8e8;
+  float: right;
+  margin-right: 4%;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.footerRight text {
+  font-size: 35rpx;
+}
+.coverDetail {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+ .cover_show {
+  display: block;
+}
+.cover_hide {
+  display: none;
+} 
+.codeContent {
+  width: 80%;
+  margin-left: 10%;
+  height: 60%;
+  margin-top: 15%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx; 
+}
+.barcode {
+    display: flex;
+    width: 100%;
+    height: 230rpx;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.barnum {
+    width: 100%;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 30rpx;
+    text-align: center;
+    letter-spacing: 15rpx;
+    white-space: nowrap;
+}
+
+.barcode > canvas {
+    width: 80%;
+    height: 150rpx;  
+}
+
+.qrcode {
+    height: 420rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.qrcode > canvas {
+    width: 420rpx;
+    height: 420rpx;
+}
+.coverImg {
+  width: 80%;
+  margin-left: 10%;
+  height: 550rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.coverimg1 {
+  width: 80%;
+  height:460rpx;
+}
+.coverimg2 {
+  width: 30%;
+  height: 60rpx;
+}

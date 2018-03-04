@@ -1,0 +1,42 @@
+ <view class="container">
+      <view class="orderContent">
+          <view class="orderNav">
+              <view class="navTop">
+                  <view class="con_hide {{currentTab == 0 ? 'con_show' : ''}}" data-current="0" bindtap="tabNav">全部</view>
+                  <view class="con_hide {{currentTab == 1 ? 'con_show' : ''}}" data-current="1" bindtap="tabNav">未付款</view>
+                  <view class="con_hide {{currentTab == 2 ? 'con_show' : ''}}" data-current="2" bindtap="tabNav">配送中</view>
+                  <view class="con_hide {{currentTab == 3 ? 'con_show' : ''}}" data-current="3" bindtap="tabNav">已完成</view>
+                  <view class="con_hide {{currentTab == 4 ? 'con_show' : ''}}" data-current="4" bindtap="tabNav">待发货</view>
+                  <view class="con_hide {{currentTab == 5 ? 'con_show' : ''}}" data-current="5" bindtap="tabNav">历史订单</view> 
+              </view>
+              <view class="navBom"></view>
+          </view>
+
+          <!-- <view class="no-order" hidden="{{orderList ? true : false}}">
+             <image src="orderQueryImg/no-order.png" class="no-order-img"></image>
+            <view class="text">暂无订单</view>
+          </view> -->
+
+          <view class="orderCon" hidden="{{orderList ? true : false}}">
+            <view class="order_detail">
+                <view class="detail_top">
+                    <text>订单号：{{orderCard}}</text>
+                    <text class="detail_right {{(currentTab == 1 || currentTab == 0) ? 'red' :''}}">等待支付</text>
+                </view>
+                <view class="detail_con">
+                    <view class="detail_con_img">
+                        <image src='orderQueryImg/no-order.png'></image>
+                    </view>
+                    <view class="detail_con_title">123456412313132</view>
+                </view>
+                <view class="detail_bom">
+                    <text>共1件商品</text>
+                    <text>合计</text>
+                    <text class="detail_bom_money">￥ 199.00</text>
+                    <button class="{{(currentTab == 1 || currentTab == 0) ? '' :'hide'}}" bindtap='orderDetailClick'>继续支付</button>
+                </view>
+            </view>
+          </view>
+      </view>
+</view> 
+

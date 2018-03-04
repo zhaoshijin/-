@@ -1,0 +1,125 @@
+page {
+  width: 100%;
+  height: 100%;
+}
+.myCouTop {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d7d7d7;  
+  font-size: 30rpx;
+}
+.userClick {
+  width: 37%;
+  text-align: center;
+}
+.default {
+  line-height: 90rpx;
+  text-align: center;
+  border-bottom: 2px solid transparent; 
+  color: black;
+  /* flex: 1;  */
+}
+.red {
+  line-height: 90rpx;
+  text-align: center;
+  border-bottom: 2px solid #ff6400; 
+  color: #ff6400;
+  /* flex: 1; */
+  font-weight: bold; 
+}
+.show {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+.noUseClick {
+  width: 100%;
+  height: 100%;
+  background: #f2f5f8;
+}
+.noUseHundred {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 25rpx;
+  height: 200rpx;
+  background: #ffffff;
+}
+.hundredImg {
+  height: 100%;
+  width: 30%;
+  float: left;
+  background: orange;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.imgText {
+  font-size: 30rpx;
+}
+.imgPrice {
+  font-size: 30rpx;
+}
+.price {
+  font-size: 50rpx;
+}
+.hundredLeft {
+  height: 100%;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+    float: left;  
+}
+.useTitle {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.useCon {
+  font-size: 24rpx;
+  color: #999999;
+}
+.hundredRight {
+line-height: 200rpx;
+float: right;
+margin-right: 10%;
+}
+.noUseTen {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 25rpx;
+  height: 200rpx;
+  background: #ffffff;
+}
+
+.notUseClick {
+  width: 100%;
+  height: 100%;
+  background: #f2f5f8;
+}
+
+/* .noUse {
+ width: 37%;
+ height: 90rpx;
+ color: #ff6400;
+ text-align: center;
+ line-height: 90rpx;
+ border-bottom: 2px solid #ff6400; 
+}
+.notUse {
+  width: 37%;
+  height: 90rpx;
+  text-align: center;
+ line-height: 90rpx;
+}
+.notUseView {
+  display: block
+}
+.notUseView {
+  display: none;
+} */
